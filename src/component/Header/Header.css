@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    margin-left: 20px;
+    font-size: 35px;
+    text-align: center;
+    color: orange;
+}
+.header img{
+    width: 86px ;
+    height: 86px;
+}
