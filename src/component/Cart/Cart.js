@@ -1,5 +1,6 @@
 import React from 'react';
 import CartInfo from '../CartInfo/CartInfo';
+import Randomitem from '../Randomitem/Randomitem';
 import './Cart.css'
 
 const Cart = ({cart, clearCart, removeFromCart, chooseRandom, random }) => {
@@ -10,7 +11,7 @@ const Cart = ({cart, clearCart, removeFromCart, chooseRandom, random }) => {
     }
     return (
         <div>
-            <h3>Selected Books</h3>
+            <h3>Selected Books: {cart.length}</h3>
             <p>Price: ${total}</p>
             {
                 cart.map(bookInfo => <CartInfo
@@ -19,13 +20,15 @@ const Cart = ({cart, clearCart, removeFromCart, chooseRandom, random }) => {
                 removeFromCart={removeFromCart}
                 ></CartInfo>)
             }
-            <div>
+
+            <Randomitem random={random}></Randomitem>
+            <div className='cart-btn'>
                 {
-                    cart.length > 1 ? <button onClick={chooseRandom}> One For Me</button> : <div></div>
+                    cart.length > 1 ? <button onClick={chooseRandom}> Choose One For Me</button> : <div></div>
                 }
                 <br />
                 {
-                    cart.length > 0 ? <button onClick={clearCart}> One For Me</button> : <div></div>
+                    cart.length > 0 ? <button onClick={clearCart}> Choose Again</button> : <div></div>
                 }
             </div>
 

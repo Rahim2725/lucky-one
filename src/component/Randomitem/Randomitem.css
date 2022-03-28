@@ -1,0 +1,14 @@
+.random-info{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    color: reb(77, 72, 72);
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+}

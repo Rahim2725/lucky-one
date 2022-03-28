@@ -40,8 +40,9 @@ const Shop = () => {
             title: "Oops...",
             text: "You can't add more then 4 item in cart!"
         })
-        const newProduct = [...cart]
-        newProduct.splice(4, 1)
+        const newProduct = [...cart];
+        newProduct.splice(4, 1);
+        setCart(newProduct);
     }
     /* removed individually item from cart */
     const removeFromCart = id => {

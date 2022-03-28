@@ -1,4 +1,5 @@
 import React from 'react';
+import './Randomitem.css'
 
 const Randomitem = ({random}) => {
     const {name, img} = random ;
