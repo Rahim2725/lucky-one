@@ -32,10 +32,18 @@ const Shop = () => {
     };
     
     /* if cart itmes is greater than 4 then show  alert */
-    /* removed  */
-
+    const removeFromCart = id => {
+        const newList = cart.filter(item => item.id !== id)
+        setCart(newList);
+    }
+    /* removed all item from cart  */
+    const clearCart = () => {
+        const newList = [];
+        setCart(newList);
+        setRandom([]);
+    }
     /* Show random item */
-    const chooesRandom = () => {
+    const chooseRandom = () => {
         const random = cart[Math.floor(Math.random()* cart.length)];
         setRandom(random);
     }
@@ -55,6 +63,10 @@ const Shop = () => {
                 <div className='cart'>
                     <Cart
                     cart={cart}
+                    clearCart={clearCart}
+                    removeFromCart={removeFromCart}
+                    chooseRandom={chooseRandom}
+                    random={random}
                     ></Cart>
                 </div>
             </div>
