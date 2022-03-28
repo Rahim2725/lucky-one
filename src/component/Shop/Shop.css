@@ -22,3 +22,14 @@
     border: none ;
     border-radius: 10px;
 }
+@media screen and (max-width:600px){
+    .shop-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .products-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .reverse-main{
+        order: 0;
+    }
+}

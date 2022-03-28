@@ -63,7 +63,7 @@ const Shop = () => {
 
     return (
         <div className='shop-container'>
-            <div className="products-container">
+            <div className="products-container reverse-main">
                 {
                     products.map(product => <Product 
                         product={product}

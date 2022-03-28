@@ -1,0 +1,15 @@
+.qustion-contaner{
+    margin: 50px ;
+    
+}
+.qustion{
+    padding: 10px;
+    border: 2px solid white;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    margin-top: 50px;
+}
+.qustion p{
+    text-align: justify;
+}
