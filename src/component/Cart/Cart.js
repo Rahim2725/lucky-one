@@ -19,6 +19,16 @@ const Cart = ({cart, clearCart, removeFromCart, chooseRandom, random }) => {
                 removeFromCart={removeFromCart}
                 ></CartInfo>)
             }
+            <div>
+                {
+                    cart.length > 1 ? <button onClick={chooseRandom}> One For Me</button> : <div></div>
+                }
+                <br />
+                {
+                    cart.length > 0 ? <button onClick={clearCart}> One For Me</button> : <div></div>
+                }
+            </div>
+
         </div>
     );
 };

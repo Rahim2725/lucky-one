@@ -1,7 +1,9 @@
-import React, { createElement, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
+import mySwal from "sweetalert2"
 import './Shop.css'
+import { text } from '@fortawesome/fontawesome-svg-core';
 
 
 const Shop = () => {
@@ -32,6 +34,16 @@ const Shop = () => {
     };
     
     /* if cart itmes is greater than 4 then show  alert */
+    if(cart.length > 4){
+        mySwal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "You can't add more then 4 item in cart!"
+        })
+        const newProduct = [...cart]
+        newProduct.splice(4, 1)
+    }
+    /* removed individually item from cart */
     const removeFromCart = id => {
         const newList = cart.filter(item => item.id !== id)
         setCart(newList);
