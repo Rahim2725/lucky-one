@@ -3,54 +3,63 @@
       "id": "6240bba1d4512f7f84a8cb83",
       "img": "https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/00ea58560_112222.jpg",
       "price": 485,
+      "reting": 4.9,
       "name": "Programming"
     },
     {
       "id": "6240bba121bf7523a81340d9",
       "img": "https://m.media-amazon.com/images/I/41ifBtAoOcL.jpg",
       "price": 495,
+      "reting": 4.7,
       "name": "Programming History"
     },
     {
       "id": "6240bba1c7db10c84022dc10",
       "img": "https://m.media-amazon.com/images/I/41zq8jCSYJL.jpg",
       "price": 461,
+      "reting": 4.4,
       "name": "Bolod to Boss"
     },
     {
       "id": "6240bba196cce39adc28ee63",
       "img": "https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg",
       "price": 130,
+      "reting": 4.8,
       "name": "JavaScript"
     },
     {
       "id": "6240bba1c6ccc7e85820dbee",
       "img": "https://linuxhint.com/wp-content/uploads/2019/06/23-1-672x1024.jpg",
       "price": 147,
+      "reting": 4.5,
       "name": "Python"
     },
     {
       "id": "6240bba1b9eb61f6da0a9fdb",
       "img": "https://realtoughcandy.com/wp-content/uploads/2021/03/introduction-to-computer-science-books-cover.jpg",
       "price": 383,
+      "reting": 4.9,
       "name": "Computer Science"
     },
     {
       "id": "6240bba1d46997adf016e60f",
       "img": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1585186377l/52607803.jpg",
       "price": 397,
+      "reting": 4.8,
       "name": "Data Structure"
     },
     {
       "id": "6240bba1671ee1ecbe522994",
       "img": "https://images-na.ssl-images-amazon.com/images/I/41bizXx0bLS._SX331_BO1,204,203,200_.jpg",
       "price": 600,
+      "reting": 4.7,
       "name": "React "
     },
     {
       "id": "6240bba1e830040c54cbb943",
       "img": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1541489138l/42643290._SY475_.jpg",
       "price": 481,
+      "reting": 4.5,
       "name": "Node Js"
     }
   ]

@@ -1,12 +1,23 @@
 import React from 'react';
+import CartInfo from '../CartInfo/CartInfo';
 import './Cart.css'
 
-const Cart = () => {
+const Cart = ({cart}) => {
+    /* Cart Total Price */
+    let total = 0 ;
+    for (const price of cart) {
+        total= total + price.price ;
+    }
     return (
-        <div className='cart'>
-            <h1>Selected Books </h1>
-            <button>CHOOSE 1 FOR ME</button><br/>
-            <button>CHOOSE AGAIN </button>
+        <div>
+            <h3>Selected Books</h3>
+            <p>Price: ${total}</p>
+            {
+                cart.map(bookInfo => <CartInfo
+                key={bookInfo.id}
+                bookInfo={bookInfo}
+                ></CartInfo>)
+            }
         </div>
     );
 };

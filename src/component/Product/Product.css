@@ -18,7 +18,7 @@
 .product-info h2{
     margin-top: 0;
 }
-.product-info button{
+.product button{
    width: 70%;
    border: none;
    background-color: rgb(230, 230, 248);
@@ -28,7 +28,7 @@
    font-weight: 700;
 }
 
-.product-info button:hover{
+.product button:hover{
     background-color: blue;
     color: white;
     font-weight: 700;
